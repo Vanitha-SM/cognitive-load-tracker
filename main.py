@@ -42,6 +42,7 @@ def add_task():
         db.session.commit()
         return jsonify({'message': 'Task added successfully!', 'task': new_task.to_dict()})
 
+
     except Exception as e:
         db.session.rollback()  # Rollback changes on error
         return jsonify({'error': str(e)})
