@@ -72,15 +72,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
         import { getFirestore, collection, addDoc, getDocs, updateDoc, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyAGLPPX5swBSYKfdvvLT0_emzPM9aIZFWI",
-            authDomain: "cognitiveloadtracker.firebaseapp.com",
-            projectId: "cognitiveloadtracker",
-            storageBucket: "cognitiveloadtracker.appspot.com",
-            messagingSenderId: "907040552990",
-            appId: "1:907040552990:web:6b01e2ae9d8da1fcaf960f"
-        };
-
+       
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const tasksCollection = collection(db, "tasks");
